@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name 2xc4000)(type Legacy)(uri ${KIPRJMOD}/2xc4000.lib)(options "")(descr ""))
+  (lib (name 3287)(type Legacy)(uri ${KIPRJMOD}/3287.lib)(options "")(descr ""))
+  (lib (name Atari2600_Clone-rescue)(type Legacy)(uri ${KIPRJMOD}/Atari2600_Clone-rescue.lib)(options "")(descr ""))
+  (lib (name um6538)(type Legacy)(uri ${KIPRJMOD}/um6538.lib)(options "")(descr ""))
+)

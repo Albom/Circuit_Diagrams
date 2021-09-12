@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 2XC4000
+D OTP EPROM 4 MiBit (512 Ki x 8)
+K OTP EPROM 4MiBit
+F http://ww1.microchip.com/downloads/en/devicedoc/doc0189.pdf
+$ENDCMP
+#
+#End Doc Library
