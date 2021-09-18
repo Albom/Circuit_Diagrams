@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L 2xc4000:2XC4000 U?
+L 2xc4000:2XC4000 U2
 U 1 1 6135074D
 P 5300 3150
-F 0 "U?" H 5300 4631 50  0000 C CNN
+F 0 "U2" H 5300 4631 50  0000 C CNN
 F 1 "2XC4000" H 5300 4540 50  0000 C CNN
 F 2 "" H 5300 3150 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/devicedoc/doc0189.pdf" H 5300 3150 50  0001 C CNN
@@ -53,10 +53,10 @@ $EndComp
 Wire Wire Line
 	5300 4450 5300 4550
 $Comp
-L 3287:3287 U?
+L 3287:3287 U1
 U 1 1 6137B350
 P 9850 3200
-F 0 "U?" H 9850 4881 50  0000 C CNN
+F 0 "U1" H 9850 4881 50  0000 C CNN
 F 1 "3287" H 9850 4790 50  0000 C CNN
 F 2 "" H 9850 3600 50  0001 C CNN
 F 3 "" H 9850 3600 50  0001 C CNN
@@ -96,10 +96,10 @@ Wire Wire Line
 Wire Wire Line
 	10700 4400 10550 4400
 $Comp
-L um6538:UM6538 U?
+L um6538:UM6538 U4
 U 1 1 61380EDA
 P 3100 3300
-F 0 "U?" H 3100 4281 50  0000 C CNN
+F 0 "U4" H 3100 4281 50  0000 C CNN
 F 1 "UM6538" H 3100 4190 50  0000 C CNN
 F 2 "" H 3100 3300 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4020bms-24bms-40bms.pdf" H 3100 3300 50  0001 C CNN
@@ -473,11 +473,11 @@ Wire Wire Line
 	7850 3700 7850 3800
 Connection ~ 7850 3800
 $Comp
-L Connector_Generic:Conn_02x12_Counter_Clockwise J?
+L Connector_Generic:Conn_02x12_Counter_Clockwise J1
 U 1 1 6151E363
 P 1100 3300
-F 0 "J?" H 1150 4017 50  0000 C CNN
-F 1 "Conn_02x12_Counter_Clockwise" H 1150 3926 50  0000 C CNN
+F 0 "J1" H 1150 4017 50  0000 C CNN
+F 1 "Atari cartridge" H 1150 3926 50  0000 C CNN
 F 2 "" H 1100 3300 50  0001 C CNN
 F 3 "~" H 1100 3300 50  0001 C CNN
 	1    1100 3300
@@ -485,6 +485,24 @@ F 3 "~" H 1100 3300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2400 2800 1400 2800
+Connection ~ 2400 2800
+Text Label 1450 2800 0    50   ~ 0
+SGND
+$Comp
+L power:+5V #PWR?
+U 1 1 61537C11
+P 1750 2650
+F 0 "#PWR?" H 1750 2500 50  0001 C CNN
+F 1 "+5V" H 1765 2823 50  0000 C CNN
+F 2 "" H 1750 2650 50  0001 C CNN
+F 3 "" H 1750 2650 50  0001 C CNN
+	1    1750 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 2900 1750 2900
+Wire Wire Line
+	1750 2900 1750 2650
 Wire Bus Line
 	3800 1350 3800 3500
 Wire Bus Line
@@ -495,5 +513,26 @@ Wire Bus Line
 	10800 1350 10800 3200
 Wire Bus Line
 	4550 1350 4550 3950
-Connection ~ 2400 2800
+$Comp
+L Connector:DB9_Male J1
+U 1 1 6145D968
+P 6850 2600
+F 0 "J1" H 7030 2646 50  0000 L CNN
+F 1 "DB9_Male" H 7030 2555 50  0000 L CNN
+F 2 "" H 6850 2600 50  0001 C CNN
+F 3 " ~" H 6850 2600 50  0001 C CNN
+	1    6850 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:DB9_Male J2
+U 1 1 6146298A
+P 7850 2650
+F 0 "J2" H 8030 2696 50  0000 L CNN
+F 1 "DB9_Male" H 8030 2605 50  0000 L CNN
+F 2 "" H 7850 2650 50  0001 C CNN
+F 3 " ~" H 7850 2650 50  0001 C CNN
+	1    7850 2650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
